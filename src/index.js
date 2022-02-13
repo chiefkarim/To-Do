@@ -1,0 +1,30 @@
+import css from "./style.css";
+(function () {
+  const background = document.createElement("div");
+  const body = document.querySelector("body");
+  const nav = document.createElement("nav");
+  const today = document.createElement("button");
+  const home = document.createElement("button");
+  const tomorrow = document.createElement("button");
+  const projects = document.createElement("button");
+  const notes = document.createElement("button");
+  const TODO = document.createElement("h1");
+
+  background.setAttribute("class", "background");
+  body.appendChild(background);
+  body.appendChild(nav);
+  today.innerText = "Today";
+  projects.innerText = "projects";
+  projects.classList.add("projects");
+  nav.appendChild(projects);
+  nav.appendChild(today);
+  home.innerText = "home";
+  nav.appendChild(home);
+  tomorrow.innerText = "tomorrow";
+  nav.appendChild(tomorrow);
+  notes.innerText = "notes";
+  nav.appendChild(notes);
+  TODO.innerText = "TO-DO";
+  TODO.setAttribute("style", "margin:0;justify-self:end;padding-right:12px");
+  nav.appendChild(TODO);
+})();

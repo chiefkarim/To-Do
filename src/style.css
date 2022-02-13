@@ -1,0 +1,38 @@
+.background {
+  position: fixed;
+  background: url("./images/background.jpg");
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body {
+  margin: 0;
+  color: white;
+  display: grid;
+  grid-template-rows: 15vh 90vh;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto 1fr;
+  justify-content: center;
+  align-content: center;
+  gap: 12px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+nav > button {
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(107, 131, 147, 0.9);
+  color: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.projects {
+  width: fit-content;
+  margin-left: 12px;
+}
